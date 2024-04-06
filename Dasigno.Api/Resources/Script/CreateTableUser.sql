@@ -1,0 +1,12 @@
+﻿CREATE TABLE Users (
+    Id SERIAL PRIMARY KEY,
+    FirstName VARCHAR(255),
+    SecondName VARCHAR(255),
+    Surname VARCHAR(255),
+    SecondSurname VARCHAR(255),
+    BirthdayDate VARCHAR(255),
+    Remove BOOLEAN NOT NULL DEFAULT false,
+    Salary FLOAT,
+    CreateOn TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    UpdateOn TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
