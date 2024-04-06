@@ -9,7 +9,7 @@ namespace Dasigno.Api.App_Start
         public void ExecuteCreateTableScript()
         {
 
-            var connectionString = ConfigurationManager.AppSettings["ConnectionStringCreate"];
+            var connectionString = ConfigurationManager.AppSettings["DatabaseCreationConnectionString"];
             using (var conn = new NpgsqlConnection(connectionString))
             {
                 conn.Open();
